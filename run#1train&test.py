@@ -29,7 +29,7 @@ for index in range(len(labels)):
     training_images.append(np.concatenate(cv2.resize(cv2.imread(training_directory+labels[index]+"/"+name, cv2.IMREAD_GRAYSCALE), (tiny_size, tiny_size))))
     training_classes.append(index)
 
-clf = neighbors.KNeighborsClassifier(n_neighbors)
+clf = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')
 
 #Train the classifier
 clf.fit(np.asarray(training_images), np.asarray(training_classes))
