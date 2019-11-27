@@ -1,3 +1,3 @@
 # Scene-Recognition
 
-This repository will only include the code to train model and print its prediction on test set to a txt files, so it doesn't contain validation accuracy or analysis figures.
+Every run includes .py and .ipynb file, while .py is for handin which only include training and crete the prediction text file, and .ipynb is notebook that is able to test and analysis the model.
